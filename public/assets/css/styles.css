@@ -1,8 +1,8 @@
 /* ---------------------------------------------------------
-    * Name: 
+    * Name:
     * Version: 1.0.1
     * Author: Themesflat
-    * Author URI: http://themesflat.com 
+    * Author URI: http://themesflat.com
 
 	* Abstracts variable
 
@@ -1285,8 +1285,7 @@ a:hover, a:focus {
   padding: 21px 0px 15px;
 }
 #header-main .header-logo img {
-  width: 136px;
-  height: 42px;
+  width: 200px;
 }
 #header-main .tf-btn {
   height: 44px;
@@ -8532,7 +8531,7 @@ tr {
   max-width: calc(100vw - 30px);
 }
 
-/* title-inner 
+/* title-inner
 ===============================================================================*/
 .flat-title {
   margin-bottom: 62px;
@@ -8545,7 +8544,7 @@ tr {
   margin-bottom: 30px;
 }
 
-/* breadcrumb 
+/* breadcrumb
 ===============================================================================*/
 .breadcrumb {
   display: -webkit-box;
@@ -8837,7 +8836,7 @@ tr {
   margin-bottom: 47px;
 }
 
-/*section-help 
+/*section-help
 ===============================================================================*/
 .section-help {
   background-color: var(--Sub-primary-1);
@@ -9509,7 +9508,7 @@ tr {
   margin-top: 41px;
 }
 
-/*section-agency-grid 
+/*section-agency-grid
 ===============================================================================*/
 .section-agency-layout .box-title {
   margin-bottom: 30px;
