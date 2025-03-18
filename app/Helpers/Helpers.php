@@ -2,6 +2,7 @@
 
 use App\Models\GeneralSetting;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Schema;
 
 function gs($key = null)
 {
@@ -18,11 +19,20 @@ function gs($key = null)
 }
 function logo()
 {
-    return gs('logo') ? env('APP_URL') . '/storage/'.gs('logo') : asset('assets/images/logo/logo.png');
+    if (Schema::hasTable('general_settings')) {
+        return gs('logo') ? env('APP_URL') . '/storage/' . gs('logo') : asset('assets/images/logo/logo.png');
+    }
+
+    return asset('assets/images/logo/logo.png');
 }
+
 function favicon()
 {
-    return gs('favicon') ? env('APP_URL') . '/storage/'.gs('favicon') : asset('assets/images/logo/favicon.png');
+    if (Schema::hasTable('general_settings')) {
+        return gs('favicon') ? env('APP_URL') . '/storage/' . gs('favicon') : asset('assets/images/logo/favicon.png');
+    }
+
+    return asset('assets/images/logo/favicon.png');
 }
 function format_phone_number(string $phoneNumber, string $countryCode = '+234'): string
 {
