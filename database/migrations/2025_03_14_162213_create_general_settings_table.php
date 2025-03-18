@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('currency_code')->default('USD')->nullable();
             $table->text('email')->nullable();
             $table->text('address')->nullable();
-            $table->integer('phone')->nullable();
+            $table->string('phone')->nullable();
             $table->timestamps();
         });
     }
