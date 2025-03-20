@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique()->nullable();
             $table->string('image')->nullable();
-            $table->foreignId('parent_id')->nullable()->constrained('locations')->onDelete('cascade');
+            $table->foreignId('parent_id')->nullable();
             $table->enum('type', ['country', 'state', 'city', 'area']);
             $table->timestamps();
         });

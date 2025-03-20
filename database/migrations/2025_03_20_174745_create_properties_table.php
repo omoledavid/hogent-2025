@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('slug')->unique()->nullable();
             $table->text('description')->nullable();
             $table->decimal('price', 10, 2);
-            $table->foreignId('location_id')->constrained()->onDelete('cascade');
-            $table->foreignId('property_type_id')->constrained()->onDelete('cascade');
+            $table->foreignId('location_id')->constrained('locations')->onDelete('cascade');
+            $table->foreignId('property_type_id');
             $table->integer('bedrooms')->nullable();
             $table->integer('bathrooms')->nullable();
             $table->integer('size')->nullable();
